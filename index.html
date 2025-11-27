@@ -332,7 +332,7 @@
             alt="VO-DP" class="blend-img-background center-image" 
             style="max-width: 100%; height: auto;" loading="lazy">
         </center>
-        <p>
+        <p style="text-align: justify; text-justify: inter-word;">
             We present <strong>TabletopGen</strong>, a training-free, fully automatic unified framework that generates instance-level interactive 3D tabletop scenes. As shown on the left, TabletopGen can generate visually realistic, detail-rich, plausibly arranged, and collision-free 3D scenes from either text or a single image input. As shown on the right, our framework can produce a wide variety of tabletop scenes, spanning different shapes, styles, and functional categories.
         </p>
       </div>
@@ -347,7 +347,7 @@
       <div class="column custom-width-95">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
+          <p style="text-align: justify; text-justify: inter-word;">
             Generating high-fidelity, physically interactive 3D simulated tabletop scenes is essential for embodied AI—especially for robotic manipulation policy learning and data synthesis. However, current text- or image-driven 3D scene generation methods mainly focus on large-scale scenes, struggling to capture the high-density layouts and complex spatial relations that characterize tabletop scenes. To address these challenges, we propose <strong>TabletopGen</strong>, a training-free, fully automatic framework that generates diverse, instance-level interactive 3D tabletop scenes. TabletopGen accepts a reference image as input, which can be synthesized by a text-to-image model to enhance scene diversity. We then perform instance segmentation and completion on the reference to obtain per-instance images. Each instance is reconstructed into a 3D model followed by canonical coordinate alignment. The aligned 3D models then undergo pose and scale estimation before being assembled into a collision-free, simulation-ready tabletop scene. A key component of our framework is a novel pose and scale alignment approach that decouples the complex spatial reasoning into two stages: a Differentiable Rotation Optimizer for precise rotation recovery and a Top-view Spatial Alignment mechanism for robust translation and scale estimation, enabling accurate 3D reconstruction from 2D reference. Extensive experiments and user studies show that TabletopGen achieves state-of-the-art performance, markedly surpassing existing methods in visual fidelity, layout accuracy, and physical plausibility, capable of generating realistic tabletop scenes with rich stylistic and spatial diversity.
           </p>
         </div>
