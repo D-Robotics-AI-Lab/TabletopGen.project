@@ -344,7 +344,7 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column custom-width-95">
+      <div class="column custom-width-90">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p style="text-align: justify; text-justify: inter-word;">
@@ -374,7 +374,7 @@
           style="max-width: 100%; height: auto;" loading="lazy">
       </center>
 
-      <p style="margin-top: 1.2rem;">
+      <p style="margin-top: 1.2rem; text-align: justify; text-justify: inter-word;">
         Our framework accepts either text (which is first converted into a reference image) or a single image. Starting from the image, we proceed in four stages: (1) <strong>Instance Extraction</strong> performs category analysis, segmentation, and completion to obtain clean, high-resolution per-instance images. (2) <strong>Canonical Model Generation</strong> uses Image-to-3D and MLLM-based alignment to create a 3D model with canonical coordinate system for each instance. (3) Our core <strong>Pose and Scale Alignment</strong> stage recovers the spatial layout. The <strong>DRO (Differentiable Rotation Optimizer)</strong> estimates rotation by optimizing a tri-modal loss, while the <strong>TSA (Top-view Spatial Alignment)</strong> mechanism synthesizes a top-view image and, together with MLLM reasoning, selects an anchor instance via our RMA-Score to infer each instance’s translation and scale. (4) <strong>3D Scene Assembly</strong> stage combines all instance models with their poses and scales in a simulator to produce the final collision-free, interactive 3D tabletop scene.
       </p>
 
