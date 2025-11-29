@@ -15,13 +15,13 @@ const HDR_PATH = 'static/textures/environment.hdr';
 const SCENE_IDS = [10,32,24,160,51,141,52,74,161,72,55,70,63,95,36,17,164,60,];
 
 // GitHub Release 基础路径
-const RELEASE_BASE = "https://github.com/D-Robotics-AI-Lab/TabletopGen/releases/download/v1.0/";
+const BASE_URL = "https://huggingface.co/xinjue1/TabletopGen-GLB-PageDemo/resolve/main/";
 
 // 自动生成场景配置
 function generateScenes(ids) {
     return ids.map((id, index) => ({
         id: index+1,
-        glb: `${RELEASE_BASE}scene_${id}.glb`,
+        glb: `${BASE_URL}scene_${id}.glb`,
         img: `static/images/models/scene_${id}.png`
     }));
 }
@@ -302,3 +302,4 @@ function animate() {
     composer.render();
 
 }
+
