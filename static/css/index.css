@@ -152,14 +152,23 @@ body {
 }
 
 .publication-venue {
-    color: var(--text-secondary);
     width: fit-content;
-    font-weight: 600;
-    background: var(--background-accent);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    margin-top: 1rem;
-    display: inline-block;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff7ed 0%, #f3e8ff 100%);
+    border: 2px solid rgba(149, 85, 181, 0.28);
+    box-shadow: var(--shadow-md);
+    padding: 0.55rem 1.2rem;
+    border-radius: 999px;
+    margin: 0.25rem auto 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0;
+}
+
+.publication-venue .venue-text {
+    color: #7e22ce;
+    font-size: 1.15rem;
+    line-height: 1.2;
 }
 
 .publication-awards {
@@ -769,3 +778,4 @@ a:focus {
   margin-left: auto;
   margin-right: auto;
 }
+
